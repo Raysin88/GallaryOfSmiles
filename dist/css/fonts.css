@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Fira Sans";
+  font-display: swap;
+  font-style: normal;
+  src: local("FiraSansRegular"), local("FiraSans-Regular"), url("../fonts/FiraSans-Regular.woff2") format("woff2"), url("../fonts/FiraSans-Regular.woff") format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Fira Sans";
+  font-display: swap;
+  font-style: normal;
+  src: local("FiraSansMedium"), local("FiraSans-Medium"), url("../fonts/FiraSans-Medium.woff2") format("woff2"), url("../fonts/FiraSans-Medium.woff") format("woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Fira Sans";
+  font-display: swap;
+  font-style: normal;
+  src: local("FiraSansBold"), local("FiraSans-Bold"), url("../fonts/FiraSans-Bold.woff2") format("woff2"), url("../fonts/FiraSans-Bold.woff") format("woff");
+  font-weight: 700;
+}/*# sourceMappingURL=fonts.css.map */

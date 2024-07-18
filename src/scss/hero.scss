@@ -1,0 +1,134 @@
+@import "mixins";
+@import "vars";
+
+
+.hero {
+  margin-top: 51px;
+
+  .owl-dots {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 38px;
+  }
+
+  .owl-dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #D9D9D9!important;
+    border: 1px solid #000;
+  }
+
+  .owl-dot.active {
+    background-color: $green-color!important;
+  }
+
+  .owl-dot:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__call {
+    display: flex;
+    justify-content: end;
+    margin-top: 43px;
+    margin-bottom: 43px;
+  }
+
+
+  .owl-carousel .owl-item img {
+    width: 100%;
+  }
+
+  .owl-carousel .owl-item {
+    display: flex;
+    background-color: #F5F5F5;
+  }
+
+  &__slider__item {
+    display: flex;
+    height: 400px;
+    justify-content: space-between;
+    padding: 40px 0 40px 50px;
+    overflow: hidden;
+    &__img {
+      display: block;
+      width: 40%;
+      order: 2;
+    }
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .item__slider__content__button {
+        @include btn-default();
+        @include hover($lightgreen-color);
+        max-width: 255px;
+      }
+    }
+  }
+
+
+}
+
+.hero__slider__item-2 {
+  .hero__slider__item__content__title {
+    max-width: 80%;
+  }
+  .hero__slider__item__img-2 {
+    width: 100%;
+    position: relative;
+    transform: rotate(-25deg);
+    right: 140px;
+    bottom: 35px;
+  }
+  .hero__slider__item__img {
+    width: 30%;
+  }
+}
+
+.hero__slider__item-3 {
+  .hero__slider__item__content__title {
+    max-width: 68%;
+  }
+  .hero__slider__item__img {
+    width: 50%;
+  }
+
+  .hero__slider__item__img img {
+    position: relative;
+    bottom: 84px;
+    width: 500px;
+    height: 500px;
+    left: 22px;
+  }
+}
+
+.hero__slider__item-4 {
+  .hero__slider__item__img {
+    width: 125%;
+    position: relative;
+    top: 10px;
+  }
+  .hero__slider__item__content__descr:last-child {
+    margin-top: 11px;
+  }
+}
+
+.hero__slider__item-5 {
+  .hero__slider__item__img {
+    width: 40%;
+    position: relative;
+    bottom: 30px;
+  }
+  .hero__slider__item__content__descr {
+    margin-top: 11px;
+  }
+
+  .item__slider__content__button {
+    max-width: 325px;
+  }
+}
+
+

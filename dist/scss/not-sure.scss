@@ -1,0 +1,157 @@
+@import "mixins";
+@import "vars";
+
+
+.not-sure {
+
+  &__title {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 77px;
+    text-align: center;
+    margin-bottom: 21px;
+  }
+
+  &__descr {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  &__form__wpapper {
+      display: flex;
+      gap: 40px;
+      margin-top: 60px;
+      padding-top: 40px;
+      padding-bottom: 38px;
+      border-top: 1px solid rgb(97, 199, 75);
+      border-bottom: 1px solid rgb(97, 199, 75);
+      &__inputs {
+        width: 50%;
+        fieldset:last-child {
+          margin-top: 10px;
+          max-width: 407px;
+        }
+      }
+      &__text {
+        width: 50%;
+      }
+  }
+
+  form {
+    fieldset {
+      width: 100%;
+      border: none;
+      padding-left: 0;
+      padding-right: 0;
+      input {
+        width: 100%;
+        background: inherit;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+        border: 1px solid rgb(220, 220, 220);
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+        color: $black-color;
+        &::placeholder {
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 29px;
+          color: $gray-color;
+        }
+      }
+      input:hover::placeholder {
+        color: $black-color;
+      }
+      textarea {
+        width: 100%;
+        min-height: 152px;
+        border: none;
+        outline: none;
+        resize: none;
+        box-sizing: border-box;
+        padding: 15px 10px 15px 10px;
+        background-color: inherit;
+        border: 1px solid rgb(220, 220, 220);
+        border-radius: 5px;
+        &::placeholder {
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 29px;
+          color: $gray-color;
+        }
+      }
+      textarea:hover::placeholder {
+        color: $black-color;
+      }
+
+      legend {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        color: $green-color;
+      }
+    }
+    .not-sure form fieldset:last-child {
+      width: 100%;
+    }
+    &__footer {
+      display: flex;
+      &__descr {
+        max-width: 471px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+      }
+      &__btn {
+          @include btn-default();
+      }
+    }
+  }
+
+
+}
+
+.not-sure__form__footer {
+  margin-bottom: 200px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 37px;
+  &__descr {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    color: $gray-color;
+    &__wrapper {
+      display: flex;
+      a {
+        width: fit-content;
+        height: fit-content;
+        color: $green-color;
+        border-bottom: 1px solid $green-color;
+      }
+      p {
+        color: $gray-color;
+      }
+    }
+  }
+  &__btn {
+      @include btn-default();
+      width: 48%;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 29px;
+      @include hover($lightgreen-color);
+  }
+}
+
+

@@ -1,0 +1,1477 @@
+@import "mixins";
+@import "vars";
+
+@media(max-width: 1440px) {
+  .header {
+
+    &__main {
+      margin-right: 0;
+    }
+    &__buttons {
+      margin-right: 0;
+    }
+  }
+
+  .header__main__nav__list__item:not(:last-child) {
+    margin-right: 18px;
+  }
+
+  .advantages__list__item h3 {
+    width: 100%;
+  }
+
+  .dentists__list {
+  grid-template-rows: 540px;
+  gap: 30px;
+    &__item {
+      &__link {
+        padding-top: 90%;
+        padding-bottom: 75%;
+        &__info {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          min-height: 230px;
+          &__btn {
+            position: relative;
+            z-index: 3;
+          }
+          &__text {
+            &__title {
+              width: 110%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer__text {
+    margin-right: 15px;
+  }
+
+  .footer__services {
+    margin-right: 15px;
+  }
+
+
+}
+
+
+@media(max-width: 1280px) {
+  .dentists__modal__content__wrapper-2 {
+    flex-direction: column;
+  }
+  .dentists__modal__content__descr {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+
+  #modal-appointment {
+    .form {
+      .form__inputs {
+        flex-direction: column;
+        &__wrapper {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  #modal-consultation {
+    .form {
+      flex-direction: column;
+      .form__inputs {
+        width: 100%;
+      }
+      .form__text {
+        max-width: 100%;
+      }
+    }
+
+  }
+  #modal-consultation .modal__content .form__inputs fieldset {
+    width: 100%;
+  }
+
+
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .header__logo-link {
+    img {
+      max-width: 135px;
+    }
+  }
+
+  .header__main {
+    min-height: 63px;
+  }
+
+  .header__main__nav__list__item__link {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .header__main__info__wrapper__time {
+    font-size: 12px;
+  }
+
+  .header__main__info__wrapper__adress {
+    font-size: 14px;
+  }
+
+  .header__buttons {
+    max-width: 190px;
+  }
+
+  .header__buttons__appointment-btn {
+    padding: 0;
+    font-size: 12px;
+  }
+
+  .header__buttons__consultation-btn {
+    padding: 0;
+    font-size: 12px;
+  }
+
+  .header__main__info__tel__link {
+    margin-left: 20px;
+    svg {
+      width: 130px;
+    }
+  }
+
+  .hero__slider__item {
+    height: 325px;
+  }
+
+  .hero__slider__item-3 .hero__slider__item__img {
+    width: 100%;
+    img {
+      max-height: 400px;
+    }
+  }
+
+  .hero__slider__item-2 .hero__slider__item__img-2 {
+    right: 50px;
+  }
+
+  .hero__slider__item-5 .hero__slider__item__img {
+    width: 76%;
+  }
+
+  .header__main__nav__list {
+    align-items: end;
+  }
+
+  .services__grid__item__line {
+    margin-top: 12px;
+  }
+
+  .services {
+    margin-bottom: 100px;
+  }
+
+  .services__grid {
+    grid-template-columns: auto auto;
+    gap: 30px;
+  }
+
+  .services__grid__item-1 {
+    grid-column: 1 / 2;
+    grid-row: 4;
+    background-size: 170px;
+  }
+
+  .services__grid__item-2 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    min-width: 334px;
+  }
+
+  .services__grid__item-3 {
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+  }
+
+  .services__grid__item-4 {
+    grid-column: 1 / 4;
+    grid-row: 3;
+    min-height: 300px;
+  }
+
+  .services__grid__item-5 {
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+    background-size: 38% 95%;
+  }
+
+  .services__grid__item-6 {
+    background-position: 50% 95%;
+    margin-top: 0;
+    grid-column: 2 / 4;
+    grid-row: 4 / 6;
+  }
+
+  .services__grid__item-7 {
+    grid-column: 1 / 2;
+    grid-row: 5;
+  }
+
+  .services__title {
+    font-size: 50px;
+  }
+
+  .services__grid__item__title {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+
+  .services__grid__item__line__descr {
+    font-size: 18px;
+  }
+
+  .not-sure__descr {
+    font-size: 18px;
+  }
+
+  .not-sure__form__footer__descr__wrapper {
+    flex-direction: column;
+  }
+
+  .not-sure__form__footer__descr__wrapper a {
+    width: 45%;
+  }
+
+  .not-sure__form__footer__btn {
+    width: 35%;
+  }
+
+  .not-sure__form__footer {
+    margin-bottom: 100px;
+  }
+
+  .not-sure__title {
+    font-size: 50px;
+  }
+
+  .not-sure form fieldset input {
+    font-size: 18px;
+  }
+
+  .not-sure form fieldset input::placeholder {
+    font-size: 18px;
+  }
+
+  .not-sure form fieldset textarea {
+    font-size: 18px;
+  }
+
+  .not-sure form fieldset textarea::placeholder {
+    font-size: 18px;
+  }
+
+  .not-sure form fieldset legend {
+    font-size: 14px;
+  }
+
+  .dentists__list {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 586px;
+  }
+
+  .dentists__list__item__link {
+    padding-top: 45%;
+    padding-bottom: 40%;
+  }
+
+  .dentists__title {
+    font-size: 50px;
+  }
+
+
+  .dentists__list__item__link__info__text__title {
+    width: 90%;
+  }
+
+  .dentists__list__item__link__info__text__descr {
+    width: 90%;
+  }
+
+  .dentists__list__item__link__info {
+    max-width: 300px;
+  }
+
+  .promotions {
+    margin-top: 100px;
+  }
+
+  .promotions__title {
+    font-size: 50px;
+  }
+
+  .promotions__item__content__title {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .promotions__item__content__descr {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .promotions__item {
+    min-height: 550px;
+  }
+
+  .advantages {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .advantages__title {
+    font-size: 50px;
+  }
+
+  .advantages__list__item h3 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+
+  .advantages__list__item p {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .reviews__title {
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  .reviews__list__item__text__name {
+    font-size: 18px;
+  }
+
+  .footer {
+    &__container {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      column-gap: 80px;
+    }
+    &__info__descr {
+      margin-bottom: 4px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16px;
+    }
+
+  .footer__services {
+    order: 2;
+    margin-right: 0;
+  }
+  .footer__info {
+    order: 1;
+    max-width: 290px;
+  }
+
+  .footer__info__btn-1 {
+    max-width: 75%;
+    margin-top: 0;
+    font-size: 14px;
+    padding: 5px 0px;
+    position: relative;
+    bottom: 13px;
+  }
+
+  .footer__info__btn-2 {
+    margin-top: 0;
+    font-size: 14px;
+    padding: 5px 0px;
+  }
+
+  .footer__text p {
+    margin-top: 14px;
+  }
+
+  .footer__services__column__list__item {
+    margin-top: 2px;
+  }
+
+  .footer__text {
+    max-width: 240px;
+  }
+
+  .footer__services__column-wrapper {
+    gap: 85px;
+  }
+
+  .footer__services__column-wrapper:last-child {
+    margin-top: 20px;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+@media(max-width: 920px) {
+  #burger-menu-min-id-1 {
+    display: block;
+  }
+  .header .burger-menu_active .burger-menu_overlay {
+    display: none;
+}
+
+  #modal-appointment {
+    .form {
+      .form__inputs__wrapper {
+        flex-direction: column;
+      }
+      .form__inputs__wrapper {
+        width: 100%;
+      }
+      .form__inputs__wrapper-2 {
+        width: 100%;
+      }
+      .form__inputs__wrapper .form__fieldset:first-child {
+        width: 100%;
+      }
+      .form__inputs__wrapper .form__fieldset:nth-child(2n) {
+        width: 100%;
+      }
+      .form__inputs__wrapper .form__fieldset:nth-child(3n) {
+        width: 100%;
+      }
+      .form__inputs__wrapper-2 .form__fieldset:first-child {
+        width: 100%;
+      }
+      .form__inputs__wrapper-2 .form__fieldset:last-child {
+        width: 100%;
+      }
+      .form__footer {
+        flex-direction: column;
+      }
+      button {
+        margin-top: 20px;
+      }
+    }
+
+  }
+  #modal-consultation {
+    .form {
+      .form__inputs {
+        max-width: 100%;
+      }
+      .form__text {
+        margin-top: 20px;
+      }
+      .form__footer {
+        flex-direction: column;
+      }
+      button {
+        margin-top: 20px;
+      }
+    }
+  }
+  #modal-consultation .modal__content .form__footer .form__footer__wrapper {
+    max-width: 100%;
+  }
+  #modal-consultation .modal__content .form .form__fieldset:first-child input {
+    width: 100%;
+  }
+  #modal-consultation .modal__content .form .form__fieldset:nth-child(2n) select {
+    width: 100%;
+  }
+
+  #myModal {
+    .modal__footer {
+      flex-direction: column;
+      max-height: none;
+    }
+    button {
+      margin-top: 20px;
+      max-width: 100%;
+      min-height: 46px;
+    }
+  }
+
+  #modal-credit {
+    .form {
+      .form__footer {
+        flex-direction: column;
+      }
+      button {
+        margin-top: 20px;
+      }
+    }
+  }
+  #modal-credit .modal__content .form__wrapper {
+    flex-direction: column;
+  }
+  #modal-credit .modal__content .form fieldset {
+    width: 100%;
+  }
+  #modal-credit .modal__content .form fieldset:last-child input {
+    width: 100%;
+  }
+
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .header__main {
+    display: none;
+  }
+
+  .header .burger-menu-min .burger-menu_button {
+    right: -14px;
+  }
+
+  .header .burger-menu-min .burger-menu_lines::before {
+    content: '';
+    width: 25px;
+    top: -8px;
+  }
+  .header .burger-menu-min .burger-menu_lines::after {
+    content: '';
+    width: 25px;
+    top: 8px;
+  }
+  .header .burger-menu-min .burger-menu_lines {
+    width: 25px;
+  }
+
+  .header .burger-menu_active .burger-menu_nav {
+    width: 100%;
+    left: 0;
+  }
+
+
+
+
+  .header__logo-link {
+    position: relative;
+    left: 102px;
+    top: 2px;
+  }
+
+  .header__logo-link img {
+    max-width: fit-content;
+  }
+
+  .hero__slider__item {
+    flex-direction: column-reverse;
+    height: 100%;
+    max-height: 620px;
+  }
+
+  .hero__slider__item-4 {
+    flex-direction: column-reverse;
+  }
+
+  .hero__slider__item__content {
+    min-height: 300px;
+  }
+
+  .hero__slider__item__img {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero__slider__item-1 {
+    width: 100%;
+    .hero .owl-carousel .owl-item img {
+      max-width: 100%;
+    }
+    .hero__slider__item__img {
+      width: 100%;
+      max-width: 100%;
+      display: flex;
+      justify-content: end;
+    }
+  }
+
+  .hero__slider__item-3 .hero__slider__item__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    height: auto;
+    left: 0;
+    max-height: fit-content;
+  }
+
+  .hero__slider__item-3 .hero__slider__item__img img {
+    bottom: 0;
+    height: auto;
+    left: 0;
+    max-height: fit-content;
+  }
+
+  .hero__slider__item-3 .hero__slider__item__content__title {
+    max-width: 100%;
+  }
+
+  .hero__slider__item-2 .hero__slider__item__img-2 {
+    transform: none;
+  }
+
+  .hero__slider__item-2 .hero__slider__item__img {
+    left: 36%;
+    position: relative;
+    width: 40%;
+    top: 85px;
+  }
+
+  .hero__slider__item-3 .hero__slider__item__img {
+    left: 35%;
+    position: relative;
+    width: 52%;
+    top: -18px;
+  }
+
+  .hero__slider__item-4 .hero__slider__item__img {
+    display: block;
+    left: 8%;
+    position: relative;
+    width: 100%;
+    max-width: 80%;
+    top: 9px;
+  }
+
+  .hero__slider__item-2 .hero__slider__item__content__title {
+    max-width: 100%;
+}
+
+  .hero__slider__item-5 .hero__slider__item__img {
+    width: 100%;
+    left: 25%;
+    top: 0;
+  }
+
+  .hero__slider__item__content__title {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+  }
+
+
+  .hero .owl-carousel .owl-item img {
+    width: 100%;
+  }
+
+
+
+  .dentists__list__item__link {
+    padding-top: 62%;
+    padding-bottom: 55%;
+  }
+
+  .advantages__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 40px;
+  }
+
+  .advantages__list__item:first-child {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .advantages__list__item:nth-child(2n) {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .advantages__list__item:last-child {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+
+
+
+
+
+}
+
+@media(max-width: 825px) {
+  .header__logo-link {
+    left: 12%;
+  }
+
+  .footer__container {
+    gap: 40px;
+    column-gap: 28px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .dentists__list__item__link {
+    padding-top: 75%;
+    padding-bottom: 55%;
+  }
+
+  .promotions__item__content__descr {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .promotions__item__content__title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+
+  .promotions__item {
+    min-height: 470px;
+    padding: 20px 25px;
+
+  }
+
+  .footer .footer__services__column-wrapper {
+    gap: 0;
+  }
+
+  .footer {
+    padding: 42px 40px 39px;
+  }
+
+
+
+
+
+
+}
+
+@media(max-width: 700px) {
+
+  .footer__services__column-wrapper {
+    flex-direction: column;
+    h3 {
+      margin-top: 12px;
+      margin-bottom: 8px;
+    }
+  }
+  .footer__services__column-wrapper:last-child {
+    margin-top: 16px;
+  }
+  .header .burger-menu_nav .footer__services__column {
+    width: 100%;
+  }
+  .header .burger-menu-min .footer__services__column__list__item a {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .header .burger-menu-min .footer__services__column__title {
+    font-size: 14px;
+    line-height: 14px;
+}
+
+  .hero__slider__item-2 .hero__slider__item__img {
+    left: 36%;
+    width: 50%;
+    top: 66px;
+  }
+
+  .hero__slider__item-3 .hero__slider__item__img {
+    left: 20%;
+  }
+
+  .hero__slider__item-4 .hero__slider__item__img {
+    left: 2%;
+    max-width: 90%;
+    top: 9px;
+  }
+
+  .hero__slider__item-5 .hero__slider__item__img {
+    left: 18%;
+  }
+
+
+
+  .services__grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .services__grid__item-1 {
+    grid-column: auto;
+    grid-row: auto;
+    background-size: 170px;
+  }
+
+  .services__grid__item-2 {
+    grid-column: auto;
+    grid-row: auto;
+    min-width: 334px;
+  }
+
+  .services__grid__item-3 {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .services__grid__item-4 {
+    grid-column: auto;
+    grid-row: auto;
+    min-height: 300px;
+  }
+
+  .services__grid__item-5 {
+    grid-column: auto;
+    grid-row: auto;
+    background-size: 38% 95%;
+  }
+
+  .services__grid__item-6 {
+    background-position: 50% 95%;
+    margin-top: 0;
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .services__grid__item-7 {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .services__grid__item {
+    background-image: none;
+    gap: 0;
+    min-height: auto;
+    padding: 30px;
+    border-radius: 10px;
+  }
+
+  .faq-icon-minus {
+    display: none;
+  }
+  .faq-text {
+    display: none;
+  }
+
+  /* Показываем текст */
+  .faq.is-active .faq-text {
+    display: block;
+  }
+
+  /* Меняем иконку */
+  .faq-icon-minus {
+    display: none;
+  }
+  .faq-text {
+    display: none;
+  }
+
+  /* Показываем текст */
+  .faq.is-active .faq-text {
+    display: block;
+  }
+
+  /* Меняем иконку */
+  .faq.is-active .faq-icon-minus {
+    display: block;
+  }
+  .faq.is-active .faq-icon-plus {
+    display: none;
+  }
+
+
+  .services__grid__item-7 button {
+    margin-top: 50px;
+  }
+
+  .dentists__list__item__link {
+    padding-top: 90%;
+    padding-bottom: 70%;
+  }
+
+  .not-sure__form__wpapper {
+    flex-direction: column;
+  }
+
+  .not-sure__form__wpapper__inputs {
+    width: 100%;
+  }
+
+  .not-sure__form__wpapper__text {
+    width: 100%;
+  }
+
+  .not-sure__form__wpapper__inputs fieldset:last-child {
+    max-width: none;
+  }
+
+  .not-sure__form__wpapper {
+    gap: 10px;
+  }
+
+  .not-sure__form__footer__descr {
+    width: max-content;
+    text-align: center;
+    order: 1;
+  }
+
+  .not-sure__form__footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .not-sure__form__footer__descr__wrapper a {
+    width: 45%;
+    margin-left: 118px;
+  }
+
+  .not-sure__form__footer__btn {
+    width: 70%;
+  }
+
+  .promotions__wrapper {
+    gap: 15px;
+  }
+
+  .advantages__list__item:first-child {
+    flex-direction: column;
+    img {
+      max-width: 180px;
+      max-height: none;
+    }
+  }
+
+  .footer .footer__services__column-wrapper {
+    flex-direction: column;
+  }
+
+  .footer .footer__services__column-wrapper:last-child {
+    margin-top: 0px;
+  }
+
+  .footer .footer__services {
+    display: flex;
+    max-width: none;
+    gap: 30px;
+  }
+
+  .footer__services__column__title {
+    margin-bottom: 4px;
+  }
+
+  .footer .footer__text {
+    max-width: 200px;
+  }
+
+  .footer .footer__info {
+    order: 1;
+    max-width: 200px;
+  }
+
+  .footer .footer__info__btn-1 {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .footer .footer__info__btn-2 {
+    max-width: 100%;
+  }
+
+  .advantages__list__item__img {
+    max-height: 75%;
+    margin-top: 30px;
+}
+
+
+
+}
+
+@media(max-width: 556px) {
+  #modal-appointment .modal__content h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+  }
+  #modal-consultation .modal__content h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+  }
+  #modal-credit .modal__content h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+  }
+
+  #myModal {
+    .modal__content {
+      width: 100%;
+      .modal__content__title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+      }
+    }
+  }
+
+
+  .header .burger-menu_lines {
+    width: 22px;
+  }
+
+  .header .burger-menu_lines::before, .header .burger-menu_lines::after, .header .burger-menu_lines {
+    width: 22px;
+  }
+
+  .header .burger-menu_lines::before {
+    content: "";
+    top: -6px;
+  }
+
+  .header .burger-menu_lines::after {
+    content: "";
+    top: 6px;
+  }
+
+  .header .burger-menu_button {
+    top: 3px;
+    right: -15px;
+  }
+
+
+  .header__logo-link img {
+    max-width: 150px;
+  }
+
+  .header__logo-link {
+    position: absolute;
+    left: 60px;
+    top: 26px;
+  }
+
+  .header__buttons {
+    display: none;
+  }
+
+  .header__btn-mobile {
+    display: block;
+    @include btn-default();
+    width: fit-content;
+  }
+
+  .burger-menu_button {
+    top: 3px;
+    right: -20px;
+  }
+
+  .burger-menu_lines {
+    width: 24px;
+  }
+
+  .burger-menu_lines::before {
+    width: 24px;
+    top: -8px;
+  }
+
+  .burger-menu_lines::after {
+    width: 24px;
+    top: 8px;
+  }
+
+  .dentists__list__item__link {
+    padding-top: 92%;
+    padding-bottom: 185px;
+  }
+
+  .dentists__list-1 {
+    display: none;
+  }
+
+  #carousel-3 {
+    display: block;
+  }
+
+
+  .owl-dots {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 38px;
+  }
+
+  .owl-dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #D9D9D9!important;
+    border: 1px solid #000;
+  }
+
+  .owl-dot.active {
+    background-color: $green-color!important;
+  }
+
+  .owl-dot:not(:last-child) {
+    margin-right: 10px;
+  }
+
+
+  .promotions__item {
+    min-height: none;
+    width: 100%;
+  }
+
+  .promotions__item:last-child {
+    margin-top: 10px;
+  }
+
+
+  .promotions__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer__container {
+    gap: 30px;
+    column-gap: 10px;
+  }
+
+
+  .footer .footer__text {
+    margin-right: 0;
+  }
+
+
+
+
+
+
+
+}
+
+
+@media(max-width: 480px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+  }
+
+  .header__btn-mobile {
+    max-width: 104px;
+    padding: 4px 0px;
+  }
+
+  .header__logo-link img {
+    max-width: 137px;
+  }
+
+  .burger-menu_button {
+    top: 1px;
+  }
+
+
+  .hero__slider__item {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    padding: 20px 20px 20px 20px;
+  }
+
+  .hero__slider__item__img {
+    position: static;
+  }
+
+  .hero__slider__item-3 .hero__slider__item__img {
+    position: static;
+    width: 90%;
+  }
+
+  .hero__slider__item__content {
+    display: flex;
+    align-items: center;
+  }
+
+  .hero__slider__item-2 .hero__slider__item__img {
+    left: 17%;
+    width: 86%;
+    top: 58px;
+  }
+
+  .hero__slider__item-4 .hero__slider__item__img {
+    left: 2%;
+    max-width: 100%;
+    top: 66px;
+  }
+
+  .hero__slider__item-5 .hero__slider__item__img {
+    position: static;
+  }
+
+
+  .hero__slider__item__content__descr {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+  }
+
+  .hero__slider__item__content .item__slider__content__button {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+
+  .hero__call {
+    position: absolute;
+    right: 20px;
+    margin-top: -18px;
+
+  }
+
+  .services {
+    margin-top: 100px;
+  }
+
+  .services__grid__item-2 {
+    min-width: auto;
+  }
+
+  .services__grid__item__title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+  }
+
+  .services__grid__item-7 h3 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+  }
+
+
+  .not-sure__descr {
+    text-align: start;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .advantages__list__item__wrapper__titles {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    max-height: none;
+    .advantages__list__item__wrapper__title:last-child {
+      margin-top: 8px;
+    }
+  }
+
+  .advantages__list__item h3 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .footer {
+    padding: 30px 20px;
+  }
+
+  .footer__container {
+    justify-content: start;
+    padding: 0;
+  }
+
+  .footer .footer__text {
+    max-width: none;
+  }
+
+  .footer .footer__info {
+    max-width: none;
+  }
+
+  .footer .footer__services {
+    order: 1;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .footer__services__column {
+    max-width: 160px;
+  }
+
+  .footer .footer__services__column__list__item {
+    margin-top: 4px;
+  }
+
+  .not-sure__form__footer__descr {
+    width: fit-content;
+  }
+
+  .not-sure__form__footer__descr__wrapper a {
+    margin-left: 90px;
+  }
+
+  .dentists__title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .promotions__title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .advantages__title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .not-sure__title {
+    text-align: start;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .footer__info svg {
+    margin-top: 8px;
+
+  }
+
+  .not-sure__form__footer__descr p {
+    text-align: left;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+  }
+
+  .not-sure__form__footer__descr__wrapper a {
+    width: fit-content;
+    margin-left: 0;
+  }
+
+  .not-sure__form__footer__descr__wrapper {
+    width: 101%;
+    flex-direction: initial;
+    flex-wrap: wrap;
+    text-align: left;
+    p {
+      width: fit-content;
+      margin-left: 0;
+    }
+  }
+
+  .services__title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .reviews__title {
+    font-size: 32px;
+    line-height: 32px;
+
+  }
+
+  .footer__services__column-wrapper:last-child {
+    margin-left: 0;
+  }
+
+}
+
+@media(max-width: 360px) {
+  .hero__slider__item {
+    min-height: 530px;
+  }
+
+  .hero__slider__item-2 {
+    .hero__slider__item__img {
+      left: 26%;
+      width: 86%;
+      top: 45px;
+    }
+
+  }
+
+  .hero__slider__item-5 {
+    .hero__slider__item__content {
+        .item__slider__content__button {
+        font-size: 10px;
+      }
+    }
+  }
+
+  .hero__slider__item-5 .hero__slider__item__content__descr {
+    margin-top: 5px;
+  }
+
+  .hero__slider__item__content .item__slider__content__button {
+    font-size: 12px;
+    padding: 4px 0;
+  }
+
+
+  .services__grid__item__wrapper {
+    .services__grid__item-7 {
+      button {
+        padding: 4px 0;
+      }
+    }
+  }
+
+  .footer__services__column {
+    max-width: none;
+  }
+
+  .footer__services__column-wrapper:last-child {
+    margin-left: 0;
+  }
+
+
+  .dentists__list__item__link {
+    padding-bottom: 185px
+  }
+
+  .dentists__list__item__link__info__text__title {
+    width: 100%;
+  }
+
+  .dentists__list__item__link__info__text__descr {
+    width: 100%;
+  }
+
+
+
+
+
+
+
+
+}

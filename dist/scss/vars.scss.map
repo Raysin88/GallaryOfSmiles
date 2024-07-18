@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["vars.scss"],"sourcesContent":["$black-color: #000000;\n$white-color: #ffffff;\n$darkgreen-color: #287728;\n$green-color: #61C74B;\n$lightgreen-color: #6DE154;\n$gray-color: #898989;\n$dark-color: #2C2C2C;\n$silver-color: #ECECEC;\n\n"],"file":"vars.scss"}

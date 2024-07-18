@@ -1,0 +1,51 @@
+@import "mixins";
+@import "vars";
+
+.reviews {
+  &__title {
+    @include title();
+  }
+  .owl-dots {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 38px;
+  }
+
+  .owl-dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #D9D9D9!important;
+    border: 1px solid #000;
+  }
+
+  .owl-dot.active {
+    background-color: $green-color!important;
+  }
+
+  .owl-dot:not(:last-child) {
+    margin-right: 20px;
+  }
+  &__list {
+    margin-top: 57px;
+    &__item {
+      display: flex;
+      flex-direction: column;
+      width: fit-content;
+      overflow: hidden;
+      border-radius: 10px;
+      &__text {
+        min-height: 100px;
+        padding: 30px 20px;
+        background-color: #F5F5F5;
+        &__name {
+          font-size: 20px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+
+
+}
